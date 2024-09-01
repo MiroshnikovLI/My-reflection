@@ -1,1 +1,569 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="color-scheme" content="dark light">
+    <title>Моя рефлексия</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" >
+    <link rel="stylesheet" href="./styles/variables.css" >
+    <link rel="stylesheet" href="./styles/globals.css" >
+    <link rel="stylesheet" href="./styles/style.css" >
+    <link rel="stylesheet" href="./styles/animations.css" >
+    <link rel="stylesheet" href="./styles/themes.css" >
+    <link rel="icon" href="./svg/favicon.svg" >
+    <link rel="apple-touch-icon" href="./images/mobile-icon.png" >
+    <script src="./scripts/set-theme.js"></script>
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__decor" aria-hidden="true">&lt;My reflection&gt;</div>
+      <h1 class="header__title">Обучение в "Яндекс Приктикум"</h1>
+      <nav class="theme-menu">
+        <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
+        <ul class="theme-menu__list">
+          <li class="theme-menu__item">
+            <button type="button" data-theme="dark" class="button theme-menu__button" aria-label="Кнопка смены офвормеления сайта на 'Темную'">Темно</button>
+          </li>
+          <li class="theme-menu__item">
+            <button type="button" data-theme="auto" disabled class="button theme-menu__button" aria-label="Кнопка смены офвормеления сайта на 'Автоматическое определение'">
+              Авто
+            </button>
+          </li>
+          <li class="theme-menu__item">
+            <button type="button" data-theme="light" class="button theme-menu__button" aria-label="Кнопка смены офвормеления сайта на 'Светлую'">Светло</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="list">
+      <article class="card" aria-label="Первая карточка из пяти">
+        <h2 class="card__title">Моя первая практическая работа в «Яндекс Практикуме».</h2>
+        <div class="card__img">
+          <div class="gelery-label">  
+            <label class="gelery-label-img img-check-1"><input class="gelery-label-input-img check-1 visually-hidden" type="radio" name="img-galery-1" id="img-1-1" checked aria-label="Первое изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показана программа для написания кода."><span></span></label>
+            <label class="gelery-label-img img-check-2"><input class="gelery-label-input-img check-2 visually-hidden" type="radio" name="img-galery-1" id="img-1-2" aria-label="Второе изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показан репозиторий сайта гит-хаба."><span></span></label>
+            <label class="gelery-label-img img-check-3"><input class="gelery-label-input-img check-3 visually-hidden" type="radio" name="img-galery-1" id="img-1-3" aria-label="Третье изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показан сайт ги-хаба. На сайте открыт главный файл сайта индекс аштмл."><span></span></label>
+            <label class="gelery-label-img img-check-4"><input class="gelery-label-input-img check-4 visually-hidden" type="radio" name="img-galery-1" id="img-1-4" aria-label="Четвертое изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показан сайт практикума, страница показывает историю сдачи первого задания."><span></span></label>
+            <label class="gelery-label-img img-check-5"><input class="gelery-label-input-img check-5 visually-hidden" type="radio" name="img-galery-1" id="img-1-5" aria-label="Пятое изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показан сайт яндекс практикума, где ревьюрер указывает на мою ошибку решение которой написал сразу."><span></span></label>
+            <label class="gelery-label-img img-check-6"><input class="gelery-label-input-img check-6 visually-hidden" type="radio" name="img-galery-1" id="img-1-6" aria-label="Шестое изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показан итог моей практической рботы."><span></span></label>
+          </div>
+          <ul>
+            <li class="btn-img-1">
+              <label class="button-left" for="img-1-6" aria-hidden="true">&lt;</label>           
+              <picture>
+                <source srcset="./images/project-1/IMG_1.webp" type="image/webp">
+                <source srcset="./images/project-1/IMG_1.avif" type="image/avif">
+                <img class="pic-1" src="./images/project-1/IMG_1.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-1-2" aria-hidden="true">&gt;</label>
+            </li>
+            <li class="btn-img-2">
+              <label class="button-left" for="img-1-1" aria-hidden="true">&lt;</label>
+              <picture>
+                <source srcset="./images/project-1/IMG_2.webp" type="image/webp">
+                <source srcset="./images/project-1/IMG_2.avif" type="image/avif">
+                <img loading="lazy" class="pic-2" src="./images/project-1/IMG_2.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-1-3" aria-hidden="true">&gt;</label>
+            </li>
+            <li class="btn-img-3">
+              <label class="button-left" for="img-1-2" aria-hidden="true">&lt;</label>
+              <picture>
+                <source srcset="./images/project-1/IMG_3.webp" type="image/webp">
+                <source srcset="./images/project-1/IMG_3.avif" type="image/avif">
+                <img loading="lazy" class="pic-3" src="./images/project-1/IMG_3.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-1-4" aria-hidden="true">&gt;</label>
+            </li>
+            <li class="btn-img-4">
+              <label class="button-left" for="img-1-3" aria-hidden="true">&lt;</label>
+              <picture>
+                <source srcset="./images/project-1/IMG_4.webp" type="image/webp">
+                <source srcset="./images/project-1/IMG_4.avif" type="image/avif">
+                <img loading="lazy" class="pic-4" src="./images/project-1/IMG_4.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-1-5" aria-hidden="true">&gt;</label>
+            </li>
+            <li class="btn-img-5">
+              <label class="button-left" for="img-1-4" aria-hidden="true">&lt;</label>
+              <picture>
+                <source srcset="./images/project-1/IMG_5.webp" type="image/webp">
+                <source srcset="./images/project-1/IMG_5.avif" type="image/avif">
+                <img loading="lazy" class="pic-5" src="./images/project-1/IMG_5.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-1-6" aria-hidden="true">&gt;</label>
+            </li>
+            <li class="btn-img-6">
+              <label class="button-left" for="img-1-5" aria-hidden="true">&lt;</label>
+              <picture>
+                <source srcset="./images/project-1/IMG_6.webp" type="image/webp">
+                <source srcset="./images/project-1/IMG_6.avif" type="image/avif">
+                <img loading="lazy" class="pic-6" src="./images/project-1/IMG_6.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-1-1" aria-hidden="true">&gt;</label>
+            </li>
+          </ul>
+        </div>
+        <div class="card__text" aria-label="Текст карточки">
+          <p>Приступал я к ней с эйфорией и полной уверенностью, что сдам ее с первого раза. Так мне казалось до первого ревью.</p>
+          <p>Тогда я совершил 34 ошибки. Но был и хороший момент - мою работу трижды похвалили. Только с 4 раза мне удалось сдать проект.</p>
+          <p>Я был немного расстроен, но сдаваться не собирался. И уже на втором ревью я получил только 8 замечаний.<strong class="three-dots">...</strong></p>
+          <div class="text-show">
+            <div class="text-hide">
+              <p>Хочу отметить, что замечания ревьюера были аргументированы. Я легко смог их исправить, так как теория первого спринта для меня была самой понятной. Основную теорию я самостоятельно начал изучать ещё до начала обучения.</p>
+              <p>На третьем ревью я получил 1 замечание. Его решение мне сразу подсказал ревьюер. Я тогда еще подумал: "Это мы ещё не изучали в теории. Почему мы должны это тут применять?". Но после я охотно начал использовать то, что мы не проходили в теории. </p>
+              <p>В итоге, я для себя решил, что буду полагаться на разум, а не на эмоции в обучении. Ведь не стоит бояться использовать что-то новое, чего я еще не изучил.</p>
+              <p>Вот так прошла моя первая практическая работа.</p>
+            </div>
+          </div>
+          <input class="input-text-show-1 visually-hidden" name="show-text" id="check-1" type="checkbox">
+          <label class="label-text-show-1" for="check-1">Показать</label>
+          <label class="label-text-show-2" for="check-1">Скрыть</label>
+        </div>
+        <div class="box-like">
+          <button type="button" class="button card__icon-button" aria-hidden="true">
+            <svg class="like-icon" width="38" height="36" viewBox="0 0 38 36" xmlns="http://www.w3.org/2000/svg">
+              <g class="heart">
+                <use class="contour" href="#contour"></use>
+                <use class="main-body" href="#main-body"></use>
+                <use class="core" href="#core"></use>
+              </g>
+              <use class="sparks" href="#sparks"></use>
+            </svg>
+          </button>
+          <button class="button card__like-button" type="button" aria-label="Понравилось статья под номером один"><span class="button__text button__text--padding" aria-hidden="true">Like</span></button>
+        </div>
+      </article>
+      <article class="card" aria-label="Вторая карточка из пяти">
+        <h2 class="card__title">Моя вторая практическая работа в «Яндекс Практикуме». </h2>
+        <div class="card__img">
+          <div class="gelery-label">  
+            <label class="gelery-label-img img-check-1"><input class="gelery-label-input-img check-1 visually-hidden" type="radio" name="img-galery-2" id="img-2-1" checked aria-label="Первое изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показана программа для написания кода."><span></span></label>
+            <label class="gelery-label-img img-check-2"><input class="gelery-label-input-img check-2 visually-hidden" type="radio" name="img-galery-2" id="img-2-2" aria-label="Второе изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показан репозиторий сайта гит-хаба."><span></span></label>
+            <label class="gelery-label-img img-check-3"><input class="gelery-label-input-img check-3 visually-hidden" type="radio" name="img-galery-2" id="img-2-3" aria-label="Третье изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показан сайт практикума, страница показывает историю сдачи первого задания."><span></span></label>
+            <label class="gelery-label-img img-check-4"><input class="gelery-label-input-img check-4 visually-hidden" type="radio" name="img-galery-2" id="img-2-4" aria-label="Четвертое изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показан итог моей практической рботы."><span></span></label>
+            <label class="gelery-label-img img-check-5"><input class="gelery-label-input-img check-5 visually-hidden" type="radio" name="img-galery-2" id="img-2-5" aria-label="Пятое изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показан итог моей практической рботы, для тренировки свойств грид."><span></span></label>
+            <label class="gelery-label-img img-check-6"><input class="gelery-label-input-img check-6 visually-hidden" type="radio" name="img-galery-2" id="img-2-6" aria-label="Шестое изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показан итог моей практической рботы, для тренировки свойств флекс."><span></span></label>
+          </div>
+          <ul>
+            <li class="btn-img-1">
+              <label class="button-left" for="img-2-6" aria-hidden="true">&lt;</label>           
+              <picture>
+                <source srcset="./images/project-2/IMG_1.webp" type="image/webp">
+                <source srcset="./images/project-2/IMG_1.avif" type="image/avif">
+                <img loading="lazy" class="pic-1" src="./images/project-2/IMG_1.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-2-2" aria-hidden="true">&gt;</label>
+            </li>
+            <li class="btn-img-2">
+              <label class="button-left" for="img-2-1" aria-hidden="true">&lt;</label>
+              <picture>
+                <source srcset="./images/project-2/IMG_2.webp" type="image/webp">
+                <source srcset="./images/project-2/IMG_2.avif" type="image/avif">
+                <img loading="lazy" class="pic-2" src="./images/project-2/IMG_2.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-2-3" aria-hidden="true">&gt;</label>
+            </li>
+            <li class="btn-img-3">
+              <label class="button-left" for="img-2-2" aria-hidden="true">&lt;</label>
+              <picture>
+                <source srcset="./images/project-2/IMG_3.webp" type="image/webp">
+                <source srcset="./images/project-2/IMG_3.avif" type="image/avif">
+                <img loading="lazy" class="pic-3" src="./images/project-2/IMG_3.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-2-4" aria-hidden="true">&gt;</label>
+            </li>
+            <li class="btn-img-4">
+              <label class="button-left" for="img-2-3" aria-hidden="true">&lt;</label>
+              <picture>
+                <source srcset="./images/project-2/IMG_4.webp" type="image/webp">
+                <source srcset="./images/project-2/IMG_4.avif" type="image/avif">
+                <img loading="lazy" class="pic-4" src="./images/project-2/IMG_4.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-2-5" aria-hidden="true">&gt;</label>
+            </li>
+            <li class="btn-img-5">
+              <label class="button-left" for="img-2-4" aria-hidden="true">&lt;</label>
+              <picture>
+                <source srcset="./images/project-2/IMG_5.webp" type="image/webp">
+                <source srcset="./images/project-2/IMG_5.avif" type="image/avif">
+                <img loading="lazy" class="pic-5" src="./images/project-2/IMG_5.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-2-6" aria-hidden="true">&gt;</label>
+            </li>
+            <li class="btn-img-6">
+              <label class="button-left" for="img-2-5" aria-hidden="true">&lt;</label>
+              <picture>
+                <source srcset="./images/project-2/IMG_6.webp" type="image/webp">
+                <source srcset="./images/project-2/IMG_6.avif" type="image/avif">
+                <img loading="lazy" class="pic-6" src="./images/project-2/IMG_6.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-2-1" aria-hidden="true">&gt;</label>
+            </li>
+          </ul>
+        </div>
+        <div class="card__text" aria-label="Текст карточки">
+          <p>Вторая практическая работа далась еще легче, чем первая. Приступал я к ней уже со спокойным разумом.</p>
+          <p>Благодаря этому, сдал работу со второго раза. В первом ревью я получил 9 замечаний и 6 одобрений.<strong class="three-dots">...</strong></p>
+          <div class="text-show">
+            <div class="text-hide">
+              <p> Похвала меня вдохновляет, но не учит так, как ошибки. Поэтому я совершил те же недочёты в следующей практической работе.</p>
+              <p>Они были маленькими и не критичными. Я их легко исправил и запомнил.</p>
+              <p>Сдав работу, у меня оставалось две недели свободного времени. Я решил использовать это время с пользой и нашел в интернете два макета для практики «flex» и «grid» свойств css.</p>
+              <p>В итоге, за второй спринт я написал 3 небольших лендинга. И осталься собой доволен. Я хорошо понял тему спринта, а также проработал ее на практике.</p>
+              <p>Так прошла моя вторая практическая работа.</p>
+            </div>
+          </div>
+          <input class="input-text-show-1 visually-hidden" name="show-text" id="check-2" type="checkbox">
+          <label class="label-text-show-1" for="check-2">Показать</label>
+          <label class="label-text-show-2" for="check-2">Скрыть</label>
+        </div>
+        <div class="box-like">
+          <button type="button" class="button card__icon-button" aria-hidden="true">
+            <svg class="like-icon" width="38" height="36" viewBox="0 0 38 36" xmlns="http://www.w3.org/2000/svg">
+              <g class="heart">
+                <use class="contour" href="#contour"></use>
+                <use class="main-body" href="#main-body"></use>
+                <use class="core" href="#core"></use>
+              </g>
+              <use class="sparks" href="#sparks"></use>
+            </svg>
+          </button>
+          <button class="button card__like-button" type="button" aria-label="Понравилось статья под номером один"><span class="button__text button__text--padding" aria-hidden="true">Like</span></button>
+        </div>
+      </article>
+      <article class="card" aria-label="Третья карточка из пяти">
+        <h2 class="card__title">Моя третья практическая работа в «Яндекс Практикуме». </h2>
+        <div class="card__img">
+          <div class="gelery-label">  
+            <label class="gelery-label-img img-check-1"><input class="gelery-label-input-img check-1 visually-hidden" type="radio" name="img-galery-3" id="img-3-1" checked aria-label="Первое изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показана программа для написания кода."><span></span></label>
+            <label class="gelery-label-img img-check-2"><input class="gelery-label-input-img check-2 visually-hidden" type="radio" name="img-galery-3" id="img-3-2" aria-label="Второе изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показан репозиторий сайта гит-хаба."><span></span></label>
+            <label class="gelery-label-img img-check-3"><input class="gelery-label-input-img check-3 visually-hidden" type="radio" name="img-galery-3" id="img-3-3" aria-label="Третье изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показан реализация проектной работы в светлой теме."><span></span></label>
+            <label class="gelery-label-img img-check-4"><input class="gelery-label-input-img check-4 visually-hidden" type="radio" name="img-galery-3" id="img-3-4" aria-label="Четвертое изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показан реализация проектной работы в темной теме."><span></span></label>
+            <label class="gelery-label-img img-check-5"><input class="gelery-label-input-img check-5 visually-hidden" type="radio" name="img-galery-3" id="img-3-5" aria-label="Пятое изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показан реализация фичи 'предварительный просмотр темы по наведение курсора на кнопки смены темы'"><span></span></label>
+            <label class="gelery-label-img img-check-6"><input class="gelery-label-input-img check-6 visually-hidden" type="radio" name="img-galery-3" id="img-3-6" aria-label="Шестое изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показан сайт практикума. На экране список в котром описывается всё что было выполнено в работе правильно."><span></span></label>
+          </div>
+          <ul>
+            <li class="btn-img-1">
+              <label class="button-left" for="img-3-6" aria-hidden="true">&lt;</label>           
+              <picture>
+                <source srcset="./images/project-3/IMG_1.webp" type="image/webp">
+                <source srcset="./images/project-3/IMG_1.avif" type="image/avif">
+                <img loading="lazy" class="pic-1" src="./images/project-3/IMG_1.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-3-2" aria-hidden="true">&gt;</label>
+            </li>
+            <li class="btn-img-2">
+              <label class="button-left" for="img-3-1" aria-hidden="true">&lt;</label>
+              <picture>
+                <source srcset="./images/project-3/IMG_2.webp" type="image/webp">
+                <source srcset="./images/project-3/IMG_2.avif" type="image/avif">
+                <img loading="lazy" class="pic-2" src="./images/project-3/IMG_2.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-3-3" aria-hidden="true">&gt;</label>
+            </li>
+            <li class="btn-img-3">
+              <label class="button-left" for="img-3-2" aria-hidden="true">&lt;</label>
+              <picture>
+                <source srcset="./images/project-3/IMG_3.webp" type="image/webp">
+                <source srcset="./images/project-3/IMG_3.avif" type="image/avif">
+                <img loading="lazy" class="pic-3" src="./images/project-3/IMG_3.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-3-4" aria-hidden="true">&gt;</label>
+            </li>
+            <li class="btn-img-4">
+              <label class="button-left" for="img-3-3" aria-hidden="true">&lt;</label>
+              <picture>
+                <source srcset="./images/project-3/IMG_4.webp" type="image/webp">
+                <source srcset="./images/project-3/IMG_4.avif" type="image/avif">
+                <img loading="lazy" class="pic-4" src="./images/project-3/IMG_4.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-3-5" aria-hidden="true">&gt;</label>
+            </li>
+            <li class="btn-img-5">
+              <label class="button-left" for="img-3-4" aria-hidden="true">&lt;</label>
+              <picture>
+                <source srcset="./images/project-3/IMG_5.webp" type="image/webp">
+                <source srcset="./images/project-3/IMG_5.avif" type="image/avif">
+                <img loading="lazy" class="pic-5" src="./images/project-3/IMG_5.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-3-6" aria-hidden="true">&gt;</label>
+            </li>
+            <li class="btn-img-6">
+              <label class="button-left" for="img-3-5" aria-hidden="true">&lt;</label>
+              <picture>
+                <source srcset="./images/project-3/IMG_6.webp" type="image/webp">
+                <source srcset="./images/project-3/IMG_6.avif" type="image/avif">
+                <img loading="lazy" class="pic-6" src="./images/project-3/IMG_6.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-3-1" aria-hidden="true">&gt;</label>
+            </li>
+          </ul>
+        </div>
+        <div class="card__text" aria-label="Текст карточки">
+          <p>Приступая к третьей практической работе, я испытывал легкую неуверенность в своих силах. Но работа оказалась не сложнее, чем две предыдущие.</p>
+          <p>Сперва, я написал лейаут страницы. На него я потратил около 1 часа. Я полностью погрузился в работу: перебирал разные варианты, сравнивал плюсы и минусы реализации, размышлял над подходящими тегами. В итоге, я нашёл лучший вариант для реализации этой работы. И получил 6 положительных комментариев по ней. Я был доволен собой.<strong class="three-dots">...</strong></p>
+          <div class="text-show">
+            <div class="text-hide">
+              <p>В третьей практической работе я столкнулся со сменой темы на сайте. Прежде она была мне незнакома.</p>
+              <p>Сначала у меня возникли с ней сложности. Только к третьему ревью я смог полностью разобраться и понять принцип работы смены темы на сайте. За это я благодарен ревьюеру. Его комментарии к моим ошибкам, помогли мне понять тему.</p> 
+              <p>В этой работе я решил немного поэкспериментировать и добавить несколько фичей на сайт.</p>
+              <p>Первая моя фича - это плавное изменение темы: линейное изменение цвета, фонового изображения и свойства прозрачности. Эти действия остались незамеченными и я не получил никаких комментариев. Как я понял позже, я не один сделал такую фичу.</p> 
+              <p>Вторая моя фича - это "предварительный просмотр темы" при наведение на слова "день" и "неон". Но меня попросили её убрать, так как цвета не соответствуют тз. Для получения зачета, я убрал эту фичу. Но идея "предпросмотра темы" засела у меня в мыслях и я стал думать, как ее реализовать. Решение я нашел быстро. Но для меня так и остается загадкой: «Соответствует ли мое решение тз?».</p>
+              <p>Остальная часть работы проходила уже в привычном ритме и не вызывала у меня никаких сложностей.</p>
+              <p>В результате, я закрепил знания третьего спринта и разобрался в работе изменений тем на сайте.</p>
+              <p>Так прошла моя третья практическая работа.</p>
+            </div>
+          </div>
+          <input class="input-text-show-1 visually-hidden" name="show-text" id="check-3" type="checkbox">
+          <label class="label-text-show-1" for="check-3">Показать</label>
+          <label class="label-text-show-2" for="check-3">Скрыть</label>
+        </div>
+        <div class="box-like">
+          <button type="button" class="button card__icon-button" aria-hidden="true">
+            <svg class="like-icon" width="38" height="36" viewBox="0 0 38 36" xmlns="http://www.w3.org/2000/svg">
+              <g class="heart">
+                <use class="contour" href="#contour"></use>
+                <use class="main-body" href="#main-body"></use>
+                <use class="core" href="#core"></use>
+              </g>
+              <use class="sparks" href="#sparks"></use>
+            </svg>
+          </button>
+          <button class="button card__like-button" type="button" aria-label="Понравилось статья под номером один"><span class="button__text button__text--padding" aria-hidden="true">Like</span></button>
+        </div>
+      </article>
+      <article class="card" aria-label="Четвертая карточка из пяти">
+        <h2 class="card__title">Моя четвертая практическая работа в «Яндекс Практикуме». </h2>
+        <div class="card__img">
+          <div class="gelery-label">  
+            <label class="gelery-label-img img-check-1"><input class="gelery-label-input-img check-1 visually-hidden" type="radio" name="img-galery-4" id="img-4-1" checked aria-label="Первое изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показана программа для написания кода."><span></span></label>
+            <label class="gelery-label-img img-check-2"><input class="gelery-label-input-img check-2 visually-hidden" type="radio" name="img-galery-4" id="img-4-2" aria-label="Второе изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показан репозиторий сайта гит-хаба."><span></span></label>
+            <label class="gelery-label-img img-check-3"><input class="gelery-label-input-img check-3 visually-hidden" type="radio" name="img-galery-4" id="img-4-3" aria-label="Третье изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показан реализация проектной работы в светлой теме."><span></span></label>
+            <label class="gelery-label-img img-check-4"><input class="gelery-label-input-img check-4 visually-hidden" type="radio" name="img-galery-4" id="img-4-4" aria-label="Четвертое изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показан реализация проектной работы в темной теме."><span></span></label>
+            <label class="gelery-label-img img-check-5"><input class="gelery-label-input-img check-5 visually-hidden" type="radio" name="img-galery-4" id="img-4-5" aria-label="Пятое изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показан реализация кнопки лайк в темной теме."><span></span></label>
+            <label class="gelery-label-img img-check-6"><input class="gelery-label-input-img check-6 visually-hidden" type="radio" name="img-galery-4" id="img-4-6" aria-label="Шестое изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показан реализация наведение на кнопку в темной теме."><span></span></label>
+          </div>
+          <ul>
+            <li class="btn-img-1">
+              <label class="button-left" for="img-4-6" aria-hidden="true">&lt;</label>           
+              <picture>
+                <source srcset="./images/project-4/IMG_1.webp" type="image/webp">
+                <source srcset="./images/project-4/IMG_1.avif" type="image/avif">
+                <img loading="lazy" class="pic-1" src="./images/project-4/IMG_1.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-4-2" aria-hidden="true">&gt;</label>
+            </li>
+            <li class="btn-img-2">
+              <label class="button-left" for="img-4-1" aria-hidden="true">&lt;</label>
+              <picture>
+                <source srcset="./images/project-4/IMG_2.webp" type="image/webp">
+                <source srcset="./images/project-4/IMG_2.avif" type="image/avif">
+                <img loading="lazy" class="pic-2" src="./images/project-4/IMG_2.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-4-3" aria-hidden="true">&gt;</label>
+            </li>
+            <li class="btn-img-3">
+              <label class="button-left" for="img-4-2" aria-hidden="true">&lt;</label>
+              <picture>
+                <source srcset="./images/project-4/IMG_3.webp" type="image/webp">
+                <source srcset="./images/project-4/IMG_3.avif" type="image/avif">
+                <img loading="lazy" class="pic-3" src="./images/project-4/IMG_3.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-4-4" aria-hidden="true">&gt;</label>
+            </li>
+            <li class="btn-img-4">
+              <label class="button-left" for="img-4-3" aria-hidden="true">&lt;</label>
+              <picture>
+                <source srcset="./images/project-4/IMG_4.webp" type="image/webp">
+                <source srcset="./images/project-4/IMG_4.avif" type="image/avif">
+                <img loading="lazy" class="pic-4" src="./images/project-4/IMG_4.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-4-5" aria-hidden="true">&gt;</label>
+            </li>
+            <li class="btn-img-5">
+              <label class="button-left" for="img-4-4" aria-hidden="true">&lt;</label>
+              <picture>
+                <source srcset="./images/project-4/IMG_5.webp" type="image/webp">
+                <source srcset="./images/project-4/IMG_5.avif" type="image/avif">
+                <img loading="lazy" class="pic-5" src="./images/project-4/IMG_5.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-4-6" aria-hidden="true">&gt;</label>
+            </li>
+            <li class="btn-img-6">
+              <label class="button-left" for="img-4-5" aria-hidden="true">&lt;</label>
+              <picture>
+                <source srcset="./images/project-4/IMG_6.webp" type="image/webp">
+                <source srcset="./images/project-4/IMG_6.avif" type="image/avif">
+                <img loading="lazy" class="pic-6" src="./images/project-4/IMG_6.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-4-1" aria-hidden="true">&gt;</label>
+            </li>
+          </ul>
+        </div>
+        <div class="card__text" aria-label="Текст карточки">
+          <p>Последняя в списке вёрстки - четвертая практическая работа. Шаблон проекта уже был скопирован на мой гидхаб и я приступил к работе.</p>
+          <p>К ней я отнёсся ещё ответственнее. У меня уже накопился багаж знаний, полученных в ходе обучения в «Яндекс Практикум».</p>
+          <p>Сначала, я написал план действий и продумывал способы реализации.<strong class="three-dots">...</strong></p>
+          <div class="text-show">
+            <div class="text-hide">
+              <p>На этапе плана, я уже понимал, какой нужно написать лейаут. Но мне его пришлось немного переписать из-за одного неверного тега.</p>
+              <p>Анимацию на сайте я сделал без сложностей. Благодаря тому, что не торопился и, с чистым разумом и спокойным состоянием души, выполнял практическую работу. Работу сдал со второго раза.</p>
+              <p>Я убедился, что знания, полученные в «Яндекс Практикуме», могу применять в работе.</p>
+              <p>Вот так прошла моя четвертая практическая работа.</p>
+            </div>
+          </div>
+          <input class="input-text-show-1 visually-hidden" name="show-text" id="check-4" type="checkbox">
+          <label class="label-text-show-1" for="check-4">Показать</label>
+          <label class="label-text-show-2" for="check-4">Скрыть</label>
+        </div>
+        <div class="box-like">
+          <button type="button" class="button card__icon-button" aria-hidden="true">
+            <svg class="like-icon" width="38" height="36" viewBox="0 0 38 36" xmlns="http://www.w3.org/2000/svg">
+              <g class="heart">
+                <use class="contour" href="#contour"></use>
+                <use class="main-body" href="#main-body"></use>
+                <use class="core" href="#core"></use>
+              </g>
+              <use class="sparks" href="#sparks"></use>
+            </svg>
+          </button>
+          <button class="button card__like-button" type="button" aria-label="Понравилось статья под номером один"><span class="button__text button__text--padding" aria-hidden="true">Like</span></button>
+        </div>
+      </article>
+      <article class="card" aria-label="Пятая карточка из пети">
+        <h2 class="card__title">Мои итоги первых трёх месяцев обучения в «Яндекс Практикуме».</h2>
+        <div class="card__img">
+          <div class="gelery-label">  
+            <label class="gelery-label-img img-check-1"><input class="gelery-label-input-img check-1 visually-hidden" type="radio" name="img-galery-5" id="img-5-1" checked aria-label="Первое изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показан итог моей первой практической рботы."><span></span></label>
+            <label class="gelery-label-img img-check-2"><input class="gelery-label-input-img check-2 visually-hidden" type="radio" name="img-galery-5" id="img-5-2" aria-label="Второе изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показан итог моей второй практической рботы."><span></span></label>
+            <label class="gelery-label-img img-check-3"><input class="gelery-label-input-img check-3 visually-hidden" type="radio" name="img-galery-5" id="img-5-3" aria-label="Третье изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показан итог моей третьей практической рботы."><span></span></label>
+            <label class="gelery-label-img img-check-4"><input class="gelery-label-input-img check-4 visually-hidden" type="radio" name="img-galery-5" id="img-5-4" aria-label="Четвертое изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показан итог моей четвертой практической рботы."><span></span></label>
+            <label class="gelery-label-img img-check-5"><input class="gelery-label-input-img check-5 visually-hidden" type="radio" name="img-galery-5" id="img-5-5" aria-label="Пятое изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показан итог моей рефлексии."><span></span></label>
+            <label class="gelery-label-img img-check-6"><input class="gelery-label-input-img check-6 visually-hidden" type="radio" name="img-galery-5" id="img-5-6" aria-label="Шестое изображение из шести. Для Переключение используйте срелки влево, вправо. Скриншот экрана, на котором показан итог моего гидхаба."><span></span></label>
+          </div>
+          <ul>
+            <li class="btn-img-1">
+              <label class="button-left" for="img-5-6" aria-hidden="true">&lt;</label>           
+              <picture>
+                <source srcset="./images/project-5/IMG_1.webp" type="image/webp">
+                <source srcset="./images/project-5/IMG_1.avif" type="image/avif">
+                <img loading="lazy" class="pic-1" src="./images/project-5/IMG_1.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-5-2" aria-hidden="true">&gt;</label>
+            </li>
+            <li class="btn-img-2">
+              <label class="button-left" for="img-5-1" aria-hidden="true">&lt;</label>
+              <picture>
+                <source srcset="./images/project-5/IMG_2.webp" type="image/webp">
+                <source srcset="./images/project-5/IMG_2.avif" type="image/avif">
+                <img loading="lazy" class="pic-2" src="./images/project-5/IMG_2.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-5-3" aria-hidden="true">&gt;</label>
+            </li>
+            <li class="btn-img-3">
+              <label class="button-left" for="img-5-2" aria-hidden="true">&lt;</label>
+              <picture>
+                <source srcset="./images/project-5/IMG_3.webp" type="image/webp">
+                <source srcset="./images/project-5/IMG_3.avif" type="image/avif">
+                <img loading="lazy" class="pic-3" src="./images/project-5/IMG_3.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-5-4" aria-hidden="true">&gt;</label>
+            </li>
+            <li class="btn-img-4">
+              <label class="button-left" for="img-5-3" aria-hidden="true">&lt;</label>
+              <picture>
+                <source srcset="./images/project-5/IMG_4.webp" type="image/webp">
+                <source srcset="./images/project-5/IMG_4.avif" type="image/avif">
+                <img loading="lazy" class="pic-4" src="./images/project-5/IMG_4.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-5-5" aria-hidden="true">&gt;</label>
+            </li>
+            <li class="btn-img-5">
+              <label class="button-left" for="img-5-4" aria-hidden="true">&lt;</label>
+              <picture>
+                <source srcset="./images/project-5/IMG_5.webp" type="image/webp">
+                <source srcset="./images/project-5/IMG_5.avif" type="image/avif">
+                <img loading="lazy" class="pic-5" src="./images/project-5/IMG_5.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-5-6" aria-hidden="true">&gt;</label>
+            </li>
+            <li class="btn-img-6">
+              <label class="button-left" for="img-5-5" aria-hidden="true">&lt;</label>
+              <picture>
+                <source srcset="./images/project-5/IMG_6.webp" type="image/webp">
+                <source srcset="./images/project-5/IMG_6.avif" type="image/avif">
+                <img loading="lazy" class="pic-6" src="./images/project-5/IMG_6.jpg" alt="">
+              </picture>
+              <label class="button-right" for="img-5-1" aria-hidden="true">&gt;</label>
+            </li>
+          </ul>
+        </div>
+        <div class="card__text" aria-label="Текст карточки">
+          <p>Мой путь обучения в «Яндекс Практикуме» проходит тернисто, но интересно. Я научился решать трудные задачи. Развил в себе навык к познанию новой информации, стремлению самосовершенствования, достижению новых личных рекордов.</p>
+          <p>Теперь я с большим энтузиазмом изучаю теорию и применяю на практике новые знания.<strong class="three-dots">...</strong></p>
+          <div class="text-show">
+            <div class="text-hide">
+              <p>Благодаря, «Яндекс Практикум» я более осмысленно смотрю на учебу, на свои эмоции, мои отношения с коллективом и на своё поведение в целом. Это помогает мне достигать больших результатов. Обучение в «Яндекс Практикум» кардинально изменило мою жизнь. Знания и опыт, которые я здесь получаю, помогают мне достичь своих целей.</p>
+              <p>Мой совет другим: не бойтесь совершать ошибки и всегда стремитесь стать лучшей версией самого себя!</p>
+              <p>Вот так прошли мои три месяца обучения.</p>
+            </div>
+          </div>
+          <input class="input-text-show-1 visually-hidden" name="show-text" id="check-5" type="checkbox">
+          <label class="label-text-show-1" for="check-5">Показать</label>
+          <label class="label-text-show-2" for="check-5">Скрыть</label>
+        </div>
+        <div class="box-like">
+          <button type="button" class="button card__icon-button" aria-hidden="true">
+            <svg class="like-icon" width="38" height="36" viewBox="0 0 38 36" xmlns="http://www.w3.org/2000/svg">
+              <g class="heart">
+                <use class="contour" href="#contour"></use>
+                <use class="main-body" href="#main-body"></use>
+                <use class="core" href="#core"></use>
+              </g>
+              <use class="sparks" href="#sparks"></use>
+            </svg>
+          </button>
+          <button class="button card__like-button" type="button" aria-label="Понравилось статья под номером один"><span class="button__text button__text--padding" aria-hidden="true">Like</span></button>
+        </div>
+      </article>
+    </main>
+    <footer class="footer">
+      <button class="button button-seve" type="button" onclick="window['seve-mode'].showModal();" aria-controls="seve-mode" aria-label="Кнопка открытия модального окна 'Сохранить на память' для сохранение статей на дискету">
+        <svg class="icon-floppy" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <use href="#floppy"></use>
+        </svg>
+        <span class="button__text" aria-hidden="true">Сохранить на память</span>
+      </button>
+      <dialog id="seve-mode" class="dialog-mode" aria-label="Модальное окно сохранить на память">
+        <div class="floppy">
+          <svg overflow="visible" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <use href="#floppy"></use>
+          </svg>
+          <h2 class="floppy__tittle">Вставьте дискету, чтобы продолжить</h2>
+        </div>
+        <button class="button button__text button__text--seve-mode" type="button" onclick="window['seve-mode'].close();" aria-label="Кнопка закрытие модального окна 'Сохранить на память'"><span class="button__text" aria-hidden="true">ОК</span></button>
+      </dialog>
+    </footer>
+    <script src="./scripts/like.js"></script>
 
+  </body>
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="contour">
+      <path d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" />
+    </symbol>
+    <symbol id="main-body">
+      <path d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z" />
+    </symbol>
+    <symbol id="core">
+      <path d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z" />
+      </symbol>
+    <symbol id="sparks">
+      <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" />
+    </symbol>
+    <symbol id="floppy">
+      <path fill="var(--global-bd-color)" d="M.5.5h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm33-36v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm30 3v3h-3v-3zm-27 3v3h-3v-3zm0-3v3h-3v-3zm0 6v3h-3v-3zm21-3v3h-3v-3zm0-3v3h-3v-3zm0 6v3h-3v-3zm-6-3v3h-3v-3zm0-3v3h-3v-3zm0 6v3h-3v-3zm6 3v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm24 9v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm24 3v3h-3v-3zm-24 0v3h-3v-3zm24 3v3h-3v-3zm-24 0v3h-3v-3zm24 3v3h-3v-3zm-24 0v3h-3v-3zm0 3v3h-3v-3zm24 0v3h-3v-3zm3 3v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm33 3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3z"/>
+    </symbol>
+  </svg>
+</html>
