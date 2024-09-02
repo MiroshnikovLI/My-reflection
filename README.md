@@ -1,7 +1,7 @@
 # My reflection
 
 > ## Данная работа реализованна на языках HTML и CSS.
->   Основа данной работы, это четвертая практическая работа <a href="https://github.com/MiroshnikovLI/slozhno-sosredotochitsya">"Закрывающий тег"</a>.
+>   Основа данной работы, это четвертая практическая работа <a href="https://github.com/MiroshnikovLI/zakrivayuschiy-teg-f">"Закрывающий тег"</a>.
 >   С данной работы я взял в реализацию:
 > 
 >     1. Лейаут сайта.
